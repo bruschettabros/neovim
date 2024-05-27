@@ -19,8 +19,9 @@ vim.opt.encoding = "utf-8"
 vim.opt.syntax = "on"
 
 -- vim.opt.nofoldenable = true
-vim.opt.foldmethod = "indent"
+-- vim.opt.foldmethod = "indent"
 
 vim.opt.history = 1000
 -- vim.opt.shells = { "/bin/zsh" }
 vim.opt.spell = true
+vim.opt.shell = "/bin/zsh"
