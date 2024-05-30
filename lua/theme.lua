@@ -13,8 +13,8 @@ lvim.transparent_window = true
 lvim.builtin.lualine.options = {
   icons_enabled = true,
   theme = 'palenight',
-  component_separators = { left = '🐈', right = '🐕'},
-  section_separators = { left = '', right = ''},
+  component_separators = { left = '🦭', right = '🐟'},
+  section_separators = { left = '▶︎', right = '◀︎'},
   disabled_filetypes = {
     statusline = {},
     winbar = {},
@@ -35,7 +35,7 @@ lvim.builtin.lualine.options = {
     lualine_c = {'filename', 'filesize' },
     lualine_x = {'fileformat', 'filetype', 'encoding'},
     lualine_y = {'location', 'progress'},
-    lualine_z = {"os.date('%H:%M')", "os.date('%d/%m/%y')", {animal} }
+    lualine_z = {"os.date('%a - %d/%m/%y - %H:%M:%S')", {animal} }
   }
   lvim.builtin.lualine.inactive_sections = {
     lualine_a = {},
