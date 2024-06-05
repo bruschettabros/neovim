@@ -21,3 +21,5 @@ vim.opt.syntax = "on"
 vim.opt.history = 1000
 vim.opt.spell = true
 vim.opt.shell = "/bin/zsh"
+
+vim.opt.autoread = true

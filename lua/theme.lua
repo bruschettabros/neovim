@@ -3,10 +3,15 @@ local function start()
     return emoji[math.random(#emoji)]
 end
 local function animal()
-    local selection = {'🐶', '🐼', '🐸', '🦊', '🦁', '🐵', '🐮', '🐷', '🐨'}
+    local selection = {'🐶', '🐼', '🐸', '🦊', '🦁', '🐵', '🐮', '🐷', '🐨', '🗿'}
     return selection[math.random(#selection)]
 end
-
+local function runCommand(command)
+    local handle = io.popen(command)
+    local result = handle:read("*a")
+    handle:close()
+    return result:gsub('[\n\r]', ' ')
+end
 -- lvim.colorscheme = 'desert'
 lvim.transparent_window = true
 
